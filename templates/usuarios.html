@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Usuarios</title>
+</head>
+<body>
+    <h1>Usuarios registrados</h1>
+    <ul>
+    {% for usuario in usuarios %}
+        <li>
+            <a href="/usuario/{{usuario['id']}}">{{ usuario['usuario'] }}</a>
+            - <a href="/borrar-usuario/{{usuario['id']}}">[Eliminar]</a>
+        </li>
+    {% endfor %}
+    </ul>
+    <a href="/crear-usuario">Agregar nuevo usuario</a>
+</body>
+</html>

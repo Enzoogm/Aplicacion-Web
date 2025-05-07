@@ -29,3 +29,11 @@ flask run opcions
 flask run --debug
 flask run -h 0.0.0.0
 flask run -p 5010
+---------------------------------------------------------------------------------------------------------
+Para cuando se buga el flask usá
+
+lsof -i :5000
+
+y despues 
+
+ kill -9 (Numero que te tira el lsof)
